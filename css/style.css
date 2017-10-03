@@ -48,15 +48,17 @@ ul {
 
 .myheader {
 	background-color: #ffffff;
-	text-align: center;
-	padding-top: 30px;
+	/*text-align: center;*/
+	padding: 2px;
 	border-bottom: 1px solid;
 	border-bottom-color: #666666
     width: 100%;
+    margin-bottom: 15px;
 }
 
-#mynav-right {
-	margin-right: -30px;
+.mynavbar {
+	border: 0;
+	margin-bottom: 0;
 }
 
 .mysection {
@@ -65,17 +67,17 @@ ul {
 	margin: 10px auto 30px auto;
 }
 
-#myh1, .myh2, .myh3 {
+.myh1, .myh2, .myh3 {
 	display: block;
 	font-family: 'Georgia', Times, Times New Roman, serif;
 	font-weight: bold;
 }
 
-#myh1 {
+.myh1 {
 	font-size: 2em;
-	color: white;
+	color: white !important;
 	background-color: #4aaaa5;
-
+	margin-left: 0 !important;
 }
 
 .myh2 {
@@ -154,15 +156,38 @@ ul {
 	padding: 10px 20px;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 992px) {
+	.pfimg {
+		width: 100%;
+		height: auto;
+	}
 
+	.pfbtn {
+		width: calc(100% - 30px);
+	}
 }
 
 @media screen and (max-width: 768px) {
+	.myheader {
+		background-color: #4aaaa5;	
+	}
 
-}
+	.navbar-toggle {
+		background-color: #ddd;
+	}
 
-@media screen and (max-width: 640px) {
+	.myh1 {
+		margin-left: 15px !important;
+	}
 
+	.myh1:hover {
+		background-color: #4aaaa5 !important;
+	}
+	
+	#bioimg {
+		width: 100%;
+		height: auto;
+		margin: 0 0 20px 0;
+	}
 }
 
